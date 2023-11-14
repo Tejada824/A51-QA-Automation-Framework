@@ -7,5 +7,10 @@ public class BaseTest {
     @BeforeSuite
     static void setupClass() {
         WebDriverManager.chromedriver().setup();
+        //constant variables used by helper methods
+        public WebDriver driver;
+        public WebDriverWait wait;
+        public Actions action;
+        public String url;
     }
 }
